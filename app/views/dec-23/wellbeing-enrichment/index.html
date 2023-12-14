@@ -6,17 +6,30 @@ Help for early years providers : Home
 {% endblock %}
 
 {% block header %}
-{% include "dec-23/includes/header-home.html" %}
+{% include "dec-23/includes/header-wellbeing.html" %}
 <div class="dfe-content-page--header">
     <div class="dfe-width-container ">
         {% include "dec-23/includes/phase.html" %}
+
+        
+            <div class="govuk-breadcrumbs govuk-!-margin-top-0 govuk-!-padding-top-4">
+                <ol class="govuk-breadcrumbs__list">
+                    <li class="govuk-breadcrumbs__list-item">
+                        <a class="govuk-breadcrumbs__link" href="/dec-23">Home</a>
+                    </li>
+                    <li class="govuk-breadcrumbs__list-item">
+                        <a class="govuk-breadcrumbs__link" href="/dec-23/areas-of-learning">Wellbeing and enrichment</a>
+                    </li>
+                </ol>
+            </div>
+        
       <div class="govuk-grid-row ">
         <div class="govuk-grid-column-three-quarters"></div>
       </div>
-      <div class="govuk-grid-row govuk-!-padding-top-9 govuk-!-padding-bottom-0">
+      <div class="govuk-grid-row govuk-!-padding-top-7 govuk-!-padding-bottom-0">
         <div class="govuk-grid-column-three-quarters">
-            <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">Help for early years providers</h1>
-            <p class="govuk-body-l">Guidance and support for people who work in early years, from the Department for Education. This site provides information on each area of learning in the EYFS, support for practitioners and general articles around wellbeing and enrichment.</p>
+            <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">Wellbeing and enrichment</h1>
+            <p class="govuk-body-l">Discover resources to help you support children’s wellbeing and enrichment in your setting.</p>
          </div>
       </div>
       <div class="govuk-grid-row govuk-!-padding-top-0 govuk-!-padding-bottom-7">
@@ -33,21 +46,15 @@ Help for early years providers : Home
 {% endblock %}
 
 {% block content %}
-<div class="govuk-grid-row govuk-!-margin-top-4 govuk-!-margin-bottom-9">
-    <div class="govuk-grid-column-full">
-        <h2>Get help for your setting</h2>
-        <p>The Department for Education has provided helpful articles and guides to support early years practitioners in their setting.</p>
-    </div>
-</div>
-<div class="govuk-grid-row">
+<div class="govuk-grid-row govuk-!-margin-bottom-6">
     <div class="govuk-grid-column-one-third">
         <div class="hf-card">
-            <a href="/dec-23/support-for-practitioners">
+            <a href="#">
             <div class="hf-card-container">
-                <img class="full-width-img" width="200" alt="" title="" src="/public/images/support-section.jpg">
+                <img class="full-width-img" width="200" alt="" title="" src="/public/images/oral-health-thumb.jpg">
                 <div class="hf-card-details">
-                <h3 class="govuk-heading-m">Support for practitioners</h3>
-                <p>Guidance to help you in your practice, from curriculum planning to reducing paperwork.</p>
+                <h3 class="govuk-heading-m">Oral health</h3>
+                <p>Find out about promoting oral health as part of the early years foundation stage (EYFS).</p>
                 </div>
             </div>
             </a>
@@ -57,10 +64,10 @@ Help for early years providers : Home
         <div class="hf-card">
             <a href="#">
             <div class="hf-card-container">
-                <img class="full-width-img" width="200" alt="" title="" src="/public/images/areas-section.jpg">
+                <img class="full-width-img" width="200" alt="" title="" src="/public/images/food-safety-thumb.jpg">
                 <div class="hf-card-details">
-                <h3 class="govuk-heading-m">EYFS areas of learning</h3>
-                <p>Information about the core areas of learning in the early years foundation stage (EYFS), plus ideas for activities to do with children.</p>
+                <h3 class="govuk-heading-m">Food safety</h3>
+                <p>Why is food safety so important for young children?</p>
                 </div>
             </div>
             </a>
@@ -70,16 +77,58 @@ Help for early years providers : Home
         <div class="hf-card">
             <a href="#">
             <div class="hf-card-container">
-                <img class="full-width-img" width="200" alt="" title="" src="/public/images/wellbeing-section.jpg">
+                <img class="full-width-img" width="200" alt="" title="" src="/public/images/internet-safety-thumb.jpg">
                 <div class="hf-card-details">
-                <h3 class="govuk-heading-m">Wellbeing and enrichment</h3>
-                <p>Resources to help you support children’s health, safety and learning in your setting.</p>
+                <h3 class="govuk-heading-m">Internet safety</h3>
+                <p>Get insights on how screen use impacts young children and how it can benefit them in early years settings.</p>
                 </div>
             </div>
             </a>
         </div>
     </div>
 </div>
+<div class="govuk-grid-row govuk-!-margin-bottom-6">
+    <div class="govuk-grid-column-one-third">
+        <div class="hf-card">
+            <a href="#">
+            <div class="hf-card-container">
+                <img class="full-width-img" width="200" alt="" title="" src="/public/images/sensory-food-thumb.jpg">
+                <div class="hf-card-details">
+                <h3 class="govuk-heading-m">Sensory food education</h3>
+                <p>Get insights on how sensory food education can help young children engage with food, and benefit them in early years (EY) settings.</p>
+                </div>
+            </div>
+            </a>
+        </div>
+    </div>
+    <div class="govuk-grid-column-one-third">
+        <div class="hf-card">
+            <a href="#">
+            <div class="hf-card-container">
+                <img class="full-width-img" width="200" alt="" title="" src="/public/images/mental-health-thumb.jpg">
+                <div class="hf-card-details">
+                <h3 class="govuk-heading-m">Mental health for early years children</h3>
+                <p>Get information and guidance on how to support babies and young children with their mental health.</p>
+                </div>
+            </div>
+            </a>
+        </div>
+    </div>
+    <div class="govuk-grid-column-one-third">
+        <div class="hf-card">
+            <a href="#">
+            <div class="hf-card-container">
+                <img class="full-width-img" width="200" alt="" title="" src="/public/images/nutrition-thumb.jpg">
+                <div class="hf-card-details">
+                <h3 class="govuk-heading-m">Nutrition</h3>
+                <p>Access resources, activity ideas and advice for supporting nutrition in your setting.</p>
+                </div>
+            </div>
+            </a>
+        </div>
+    </div>
+</div>
+
 <section class="hf-ctas">
     <div class="govuk-grid-row">
         <div class="govuk-grid-column-one-half">
