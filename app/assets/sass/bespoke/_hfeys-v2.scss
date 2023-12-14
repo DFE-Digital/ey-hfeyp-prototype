@@ -1,0 +1,51 @@
+.hf-card-container {
+    background-color: govuk-colour("light-grey");
+    border-bottom: 3px solid #003A69;
+}
+
+.hf-card-details {
+    padding: govuk-spacing(6);
+    min-height: 180px;
+}
+
+.hf-card a {
+    text-decoration: none;
+}
+
+.hf-card a .hf-card-details p {
+    color: $govuk-text-colour;
+}
+.hf-card a .hf-card-details h3 {
+    color: $govuk-link-colour;
+}
+
+a:hover .hf-card-container {
+    background-color: #003A69;
+}
+
+a:hover .hf-card-container .hf-card-details p, a:hover .hf-card-container .hf-card-details h3 {color: govuk-colour("white")}
+
+.hf-other {
+    padding-top: govuk-spacing(9);
+    padding-bottom: govuk-spacing(9);
+}
+.hf-ctas {
+    padding-top: govuk-spacing(9);
+    padding-bottom: govuk-spacing(4);
+}
+.hf-second-color {color: $govuk-secondary-text-colour}
+
+.hf-cta-block {
+    display: flex;
+    column-gap: 20px;
+}
+
+.hf-icon {
+    background: #ebf2f6;
+    display: flex;
+    padding: 10px;
+    border-radius: 50%;
+}
+.hf-icon path {
+    fill: #347CA9;
+}
