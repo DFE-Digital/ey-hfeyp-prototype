@@ -175,18 +175,27 @@
     display: none;
 }
 .menu-btn:checked ~ .dfe-vertical-nav {
-    display: block
-  }
+    display: block;
+    
+}
 .menu-btn:not(:checked) ~ .dfe-vertical-nav {
     display: none
   }
 
+  .menu-btn:checked ~ .menu-icon .sm-open {display: none}
+  .menu-btn:checked ~ .menu-icon .sm-close {display: block}
+  .menu-btn:not(:checked) ~ .menu-icon .sm-open {display: block}
+  .menu-btn:not(:checked) ~ .menu-icon .sm-close {display: none}
+
 label.menu-icon {
     display: flex;
     align-items: center;
-    gap: 10px;
     color: $govuk-link-colour;
     font-weight: bold;
+}
+
+label.menu-icon svg {
+    margin-right: 10px;
 }
 @media (min-width: 40.0625em) {
     label.menu-icon {display: none;}
