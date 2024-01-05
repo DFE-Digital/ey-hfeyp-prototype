@@ -356,6 +356,8 @@ a:hover .hf-card-container .hf-card-details p, a:hover .hf-card-container .hf-ca
         order: 2;
         padding: 20px;
     }
+
+    
  }
 
 .info-notice {
@@ -399,6 +401,16 @@ th.govuk-table__header {
         font-size: 1.1875rem;
         line-height: 1.3157894737
     }
+    .gem-c-attachment__thumbnail {
+        position: relative;
+        width: 140px;
+        height: auto;
+        max-width: 140px;
+        margin-right: 20px;
+        margin-bottom: 15px;
+        padding: 5px;
+        float: left
+    }
 }
 
 @media print {
@@ -430,6 +442,7 @@ th.govuk-table__header {
 .gem-c-attachment__thumbnail-image {
     display: block;
     max-width: 280px;
+    width: 140px;
     height: auto;
     border: rgba(11,12,12,0.1);
     outline: 5px solid rgba(11,12,12,0.1);
@@ -448,7 +461,7 @@ th.govuk-table__header {
     word-wrap: break-word
 }
 
-.govspeak .gem-c-attachment__title {
+.gem-c-attachment__title {
     font-family: "GDS Transport",arial,sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -460,13 +473,13 @@ th.govuk-table__header {
 }
 
 @media print {
-    .govspeak .gem-c-attachment__title {
+    .gem-c-attachment__title {
         font-family: sans-serif
     }
 }
 
 @media (min-width: 40.0625em) {
-    .govspeak .gem-c-attachment__title {
+    .gem-c-attachment__title {
         font-size:27px;
         font-size: 1.6875rem;
         line-height: 1.1111111111
@@ -474,17 +487,17 @@ th.govuk-table__header {
 }
 
 @media print {
-    .govspeak .gem-c-attachment__title {
+    .gem-c-attachment__title {
         font-size: 18pt;
         line-height: 1.15
     }
 }
 
-.govspeak .gem-c-attachment__link {
+.gem-c-attachment__link {
     line-height: 1.29
 }
 
-.govspeak .gem-c-attachment__metadata {
+.gem-c-attachment__metadata {
     font-family: "GDS Transport",arial,sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -497,13 +510,13 @@ th.govuk-table__header {
 }
 
 @media print {
-    .govspeak .gem-c-attachment__metadata {
+    .gem-c-attachment__metadata {
         font-family: sans-serif
     }
 }
 
 @media (min-width: 40.0625em) {
-    .govspeak .gem-c-attachment__metadata {
+    .gem-c-attachment__metadata {
         font-size:19px;
         font-size: 1.1875rem;
         line-height: 1.3157894737
@@ -511,26 +524,26 @@ th.govuk-table__header {
 }
 
 @media print {
-    .govspeak .gem-c-attachment__metadata {
+     .gem-c-attachment__metadata {
         font-size: 14pt;
         line-height: 1.15
     }
 }
 
-.govspeak .gem-c-attachment__metadata:last-of-type {
+ .gem-c-attachment__metadata:last-of-type {
     margin-bottom: 0
 }
 
-.govspeak .gem-c-attachment__metadata .gem-c-attachment__attribute {
+.gem-c-attachment__metadata .gem-c-attachment__attribute {
     word-wrap: break-word;
     overflow-wrap: break-word
 }
 
-.govspeak .gem-c-attachment__metadata--compact {
+.gem-c-attachment__metadata--compact {
     margin-bottom: 0
 }
 
-.govspeak .gem-c-attachment__abbr {
+.gem-c-attachment__abbr {
     text-decoration: none;
     cursor: help
 }
