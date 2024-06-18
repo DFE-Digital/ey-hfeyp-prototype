@@ -1,3 +1,7 @@
+//
+// For guidance on how to add CSS and SCSS see:
+// https://prototype-kit.service.gov.uk/docs/adding-css-javascript-and-images
+//
 // global styles for <a> and <p> tags
 $govuk-global-styles: true;
 $govuk-new-link-styles: true;
@@ -6,10 +10,16 @@ $govuk-new-link-styles: true;
 $govuk-assets-path: '/govuk/assets/';
 
 // Import GOV.UK Frontend and any extension styles if extensions have been configured
-@import "lib/extensions/extensions";
+// @import "lib/extensions/extensions";
 
 // Import new DfE Frontend and any extension styles if extensions have been configured
-@import 'node_modules/dfe-frontend-alpha/packages/dfefrontend';
+// @import 'node_modules/dfe-frontend-alpha/packages/dfefrontend';
+
+@import 'node_modules/dfe-frontend/packages/dfefrontend';
+
+.govuk-width-container { @include govuk-width-container; }
+
+// Add extra styles here
 
 // Patterns that aren't in Frontend
 @import "patterns/step-by-step-header";
@@ -19,32 +29,32 @@ $govuk-assets-path: '/govuk/assets/';
 @import "patterns/related-items";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
-@import "brain-development-start1";
-@import "brain-development";
-@import "home";
-@import "layout";
+// @import "brain-development-start1";
+// @import "brain-development";
+// @import "home";
+// @import "layout";
 @import "sign-in";
 @import "training-overview";
-@import "bespoke/interrupt-card";
-@import "bespoke/info-bubble";
+// @import "bespoke/interrupt-card";
+// @import "bespoke/info-bubble";
 @import "bespoke/prompt";
-@import "bespoke/cards";
-@import "bespoke/subnav";
+// @import "bespoke/cards";
+// @import "bespoke/subnav";
 @import "bespoke/quotes";
-@import "bespoke/print";
-@import "bespoke/log-entry";
-@import "bespoke/icons.scss";
-@import "bespoke/hmcts-progress-bar.scss";
-@import "bespoke/progress-bar.scss";
-@import "bespoke/resources.scss";
+// @import "bespoke/print";
+// @import "bespoke/log-entry";
+// @import "bespoke/icons.scss";
+// @import "bespoke/hmcts-progress-bar.scss";
+// @import "bespoke/progress-bar.scss";
+// @import "bespoke/resources.scss";
 @import "bespoke/module-overview-progress";
-@import "bespoke/dfe-header-fixes";
-@import "bespoke/dfe-side-nav";
-@import "bespoke/image-box";
+// @import "bespoke/dfe-header-fixes";
+// @import "bespoke/dfe-side-nav";
+// @import "bespoke/image-box";
 @import "bespoke/audio";
 @import "bespoke/infographic";
 @import "bespoke/card-progress";
-@import "bespoke/key-concept";
+// @import "bespoke/key-concept";
 @import "bespoke/completed-modules";
 @import "bespoke/access-needs";
 @import "bespoke/hfeys-v2";

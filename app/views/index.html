@@ -1,16 +1,13 @@
 
-{% extends "layout-dfe-updated-pt.html" %}
-{% set removeAllLinks = true %}
+{% extends "layouts/main.html" %}
 
-{% block pageTitle %}
-  Home – GOV.UK Prototype Kit
-{% endblock %}
+{% set pageName="Home" %}
 
 {% block content %}
             <div class="govuk-grid-row">
                 <div class="govuk-grid-column-full">
                   <h1 class="govuk-heading-xl">
-                    Prototype your service using GOV.UK Prototype Kit.
+                    {{ serviceName }}
                     <span class="govuk-caption-xl">{{ releaseVersion }}</span>
                   </h1>{{ releaseVersion | log }}
                 </div>
@@ -33,7 +30,7 @@
                 <div class="govuk-grid-column-one-third">
                   <h2 class="govuk-heading-m">Notes on prototype</h2>
                   <p classs="govuk-body"></p>
-                  <p>This prototypye shows the new design for the Help for early years providers website. The prototype was set up on 12/12/23 and compliments the current prototype.</p>
+                  <p>This prototype shows the new design for the Help for early years providers website. The prototype was set up on 12/12/23 and compliments the current prototype.</p>
                 </div>
               </div>
             </div>
