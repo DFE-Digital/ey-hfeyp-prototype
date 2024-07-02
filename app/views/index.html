@@ -1,16 +1,13 @@
 
-{% extends "layout-dfe-updated-pt.html" %}
-{% set removeAllLinks = true %}
+{% extends "layouts/main.html" %}
 
-{% block pageTitle %}
-  Home – GOV.UK Prototype Kit
-{% endblock %}
+{% set pageName="Home" %}
 
 {% block content %}
             <div class="govuk-grid-row">
                 <div class="govuk-grid-column-full">
                   <h1 class="govuk-heading-xl">
-                    Prototype your service using GOV.UK Prototype Kit.
+                    {{ serviceName }}
                     <span class="govuk-caption-xl">{{ releaseVersion }}</span>
                   </h1>{{ releaseVersion | log }}
                 </div>
@@ -18,22 +15,20 @@
                 <div class="govuk-grid-column-two-thirds">
                   <h2 class="govuk-heading-m">Prototypes</h2>
 
-                  <h2 class="govuk-heading-s">December 23</h2>
-                  <p>Latest version of redesign.</p>
+                  
                   <ul class="govuk-list govuk-list--bullet">
-                    <li><a href="dec-23/">Home page</a></li>
+                    <li><a href="dec-23/">Redesigned version of site with nutrition and SEND UR test articles</a></li>
                   </ul>
-                  <h2 class="govuk-heading-s">May 24</h2>
-                  <p>Latest version of redesign.</p>
-                  <ul class="govuk-list govuk-list--bullet">
-                    <li><a href="dec-23/">Home page</a></li>
-                  </ul>
+                  
                 </div>
             
                 <div class="govuk-grid-column-one-third">
                   <h2 class="govuk-heading-m">Notes on prototype</h2>
                   <p classs="govuk-body"></p>
-                  <p>This prototypye shows the new design for the Help for early years providers website. The prototype was set up on 12/12/23 and compliments the current prototype.</p>
+                  <p>This is a finalised cleaned up version of the Help for Early Years Providers prototype.</p>
+                  <p>Live site is visible at: <a href="https://help-for-early-years-providers.education.gov.uk/" target="_blank">https://help-for-early-years-providers.education.gov.uk/</a></p>
+
+                    <p>Older designs that are no longer relevant or that have now been released to production have been removed. Access to these can be made via the GIT repo if required.</p>
                 </div>
               </div>
             </div>
